@@ -155,3 +155,107 @@ document.getElementById('save6').onclick = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 }
+
+document.getElementById('pay7').onclick = function () {
+    let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
+    if (kq == true) {
+        alert("Mua hàng thành công!");
+        let donHang = {
+            ten: "Áo khoác da 2 lớp",
+            gia: 100000,
+            trangThai: "Đang vận chuyển"
+        };
+        localStorage.setItem("donHang", JSON.stringify(donHang));
+    }
+}
+document.getElementById('save7').onclick = function () {
+    let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+
+    gio.push({
+        ten: "Áo khoác da 2 lớp",
+        gia: 100000,
+        soLuong: 1
+    });
+
+    localStorage.setItem("gioHang", JSON.stringify(gio));
+
+    alert("Đã thêm vào giỏ hàng!");
+}
+
+document.getElementById('pay8').onclick = function () {
+    let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
+    if (kq == true) {
+        alert("Mua hàng thành công!");
+        let donHang = {
+            ten: "Áo măng tô",
+            gia: 100000,
+            trangThai: "Đang vận chuyển"
+        };
+        localStorage.setItem("donHang", JSON.stringify(donHang));
+    }
+}
+document.getElementById('save8').onclick = function () {
+    let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+
+    gio.push({
+        ten: "Áo măng tô",
+        gia: 100000,
+        soLuong: 1
+    });
+
+    localStorage.setItem("gioHang", JSON.stringify(gio));
+
+    alert("Đã thêm vào giỏ hàng!");
+}
+
+document.getElementById('pay9').onclick = function () {
+    let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
+    if (kq == true) {
+        alert("Mua hàng thành công!");
+        let donHang = {
+            ten: "Váy xòe hoa nhí",
+            gia: 100000,
+            trangThai: "Đang vận chuyển"
+        };
+        localStorage.setItem("donHang", JSON.stringify(donHang));
+    }
+}
+document.getElementById('save9').onclick = function () {
+    let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+
+    gio.push({
+        ten: "Váy xòe hoa nhí",
+        gia: 100000,
+        soLuong: 1
+    });
+
+    localStorage.setItem("gioHang", JSON.stringify(gio));
+
+    alert("Đã thêm vào giỏ hàng!");
+}
+
+document.getElementById('pay10').onclick = function () {
+    let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
+    if (kq == true) {
+        alert("Mua hàng thành công!");
+        let donHang = {
+            ten: "Váy đầm",
+            gia: 100000,
+            trangThai: "Đang vận chuyển"
+        };
+        localStorage.setItem("donHang", JSON.stringify(donHang));
+    }
+}
+document.getElementById('save10').onclick = function () {
+    let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+
+    gio.push({
+        ten: "Váy đầm",
+        gia: 100000,
+        soLuong: 1
+    });
+
+    localStorage.setItem("gioHang", JSON.stringify(gio));
+
+    alert("Đã thêm vào giỏ hàng!");
+}
