@@ -100,14 +100,17 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="image_be-nau_1_ao-khoac-ni-tay-dai.jpg" class="d-block w-100"
-                                    alt="be-nau_1_ao-khoac-ni-tay-dai">
+                                    alt="be-nau_1_ao-khoac-ni-tay-dai" data-bs-toggle="modal"
+                                    data-bs-target="#modalHot1">
                             </div>
                             <div class="carousel-item">
                                 <img src="image_xanh-navy-caro_1_ao-khoac-ni-tay-dai.jpg" class="d-block w-100"
-                                    alt="xanh-navy-caro_1_ao-khoac-ni-tay-dai">
+                                    alt="xanh-navy-caro_1_ao-khoac-ni-tay-dai" data-bs-toggle="modal"
+                                    data-bs-target="#modalHot2">
                             </div>
                             <div class="carousel-item">
-                                <img src="image-den-1-ao-khoac-nu.jpg" class="d-block w-100" alt="den-1-ao-khoac-nu">
+                                <img src="image-den-1-ao-khoac-nu.jpg" class="d-block w-100" alt="den-1-ao-khoac-nu"
+                                    data-bs-toggle="modal" data-bs-target="#modalHot3">
                             </div>
                         </div>
 
@@ -131,15 +134,16 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="image-den-ao-khoac-gio-nam.jpg" class="d-block w-100"
-                                    alt="den-ao-khoac-gio-nam">
+                                    alt="den-ao-khoac-gio-nam" data-bs-toggle="modal" data-bs-target="#modalNew1">
                             </div>
                             <div class="carousel-item">
                                 <img src="image-den-ao-thun-ngan-tay.jpg" class="d-block w-100"
-                                    alt="den-ao-thun-ngan-tay">
+                                    alt="den-ao-thun-ngan-tay" data-bs-toggle="modal" data-bs-target="#modalNew2">
                             </div>
                             <div class="carousel-item">
                                 <img src="image-den-ke-soc-1-ao-khoac-ni-nu-hai-lop-lot.jpg" class="d-block w-100"
-                                    alt="den-ke-soc-1-ao-khoac-ni-nu-hai-lop-lot">
+                                    alt="den-ke-soc-1-ao-khoac-ni-nu-hai-lop-lot" data-bs-toggle="modal"
+                                    data-bs-target="#modalNew3">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#crouslNew"
@@ -233,6 +237,108 @@
         </div>
     </div>
 
+    <div class="modal fade" id="modalHot1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5" id="modalLabel1">
+                        <p>Áo khoác nỉ dành cho nữ</p>
+                        <p>Giá: 100.000 VNĐ</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Màu sắc</h5>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mau1">
+                            <label class="form-check-label">Màu be</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mau1">
+                            <label class="form-check-label">Màu nâu</label>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4">Kích thước</h5>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size1">
+                            <label class="form-check-label">S</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size1">
+                            <label class="form-check-label">M</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size1">
+                            <label class="form-check-label">L</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size1">
+                            <label class="form-check-label">XL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="pay1">Mua ngay</button>
+                    <button type="button" class="btn btn-success" id="save1">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalHot2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fs-5" id="modalLabel1">
+                        <p>Áo khoác nỉ dài tay</p>
+                        <p>Giá: 100.000 VNĐ</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Màu sắc</h5>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mau2">
+                            <label class="form-check-label">Màu xanh navy caro</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mau2">
+                            <label class="form-check-label">Màu đỏ trơn</label>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4">Kích thước</h5>
+                    <div class="d-flex gap-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size2">
+                            <label class="form-check-label">S</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size2">
+                            <label class="form-check-label">M</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size2">
+                            <label class="form-check-label">L</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="size2">
+                            <label class="form-check-label">XL</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="pay2">Mua ngay</button>
+                    <button type="button" class="btn btn-success" id="save2">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="modal1" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -269,6 +375,7 @@
         </div>
     </div>
 
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
