@@ -1,0 +1,21 @@
+.card {
+    margin-bottom: 20px;
+}
+
+.qc {
+    position: sticky;
+    top: 3;
+    height: 100vh;
+}
+
+@media (max-width: 991px) {
+    .qc {
+        max-height: 100px;
+        overflow: hidden;
+    }
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
