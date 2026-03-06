@@ -43,6 +43,7 @@ document.getElementById('save1').onclick = function () {
 }
 
 
+
 document.getElementById('pay2').onclick = function () {
     let mau = document.querySelector('input[name="mau2"]:checked');
     let size = document.querySelector('input[name="size2"]:checked');
@@ -86,6 +87,7 @@ document.getElementById('save2').onclick = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 }
+
 
 
 document.getElementById('pay3').onclick = function () {
@@ -132,6 +134,8 @@ document.getElementById('save3').onclick = function () {
     alert("Đã thêm vào giỏ hàng!");
 }
 
+
+
 document.getElementById('pay4').onclick = function () {
     let mau = document.querySelector('input[name="mau4"]:checked');
     let size = document.querySelector('input[name="size4"]:checked');
@@ -175,6 +179,8 @@ document.getElementById('save4').onclick = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 }
+
+
 
 document.getElementById('pay5').onclick = function () {
     let mau = document.querySelector('input[name="mau5"]:checked');
@@ -220,6 +226,8 @@ document.getElementById('save5').onclick = function () {
     alert("Đã thêm vào giỏ hàng!");
 }
 
+
+
 document.getElementById('pay6').onclick = function () {
     let mau = document.querySelector('input[name="mau6"]:checked');
     let size = document.querySelector('input[name="size6"]:checked');
@@ -263,6 +271,8 @@ document.getElementById('save6').onclick = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 }
+
+
 
 document.getElementById('pay7').onclick = function () {
     let mau = document.querySelector('input[name="mau7"]:checked');
@@ -308,6 +318,8 @@ document.getElementById('save7').onclick = function () {
     alert("Đã thêm vào giỏ hàng!");
 }
 
+
+
 document.getElementById('pay8').onclick = function () {
     let mau = document.querySelector('input[name="mau8"]:checked');
     let size = document.querySelector('input[name="size8"]:checked');
@@ -352,6 +364,8 @@ document.getElementById('save8').onclick = function () {
     alert("Đã thêm vào giỏ hàng!");
 }
 
+
+
 document.getElementById('pay9').onclick = function () {
     let mau = document.querySelector('input[name="mau9"]:checked');
     let size = document.querySelector('input[name="size9"]:checked');
@@ -395,6 +409,8 @@ document.getElementById('save9').onclick = function () {
 
     alert("Đã thêm vào giỏ hàng!");
 }
+
+
 
 document.getElementById('pay10').onclick = function () {
     let mau = document.querySelector('input[name="mau10"]:checked');
