@@ -10,18 +10,26 @@
     justify-content: space-between;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+}
+
 .qc {
     position: sticky;
     top: 3;
     height: 100vh;
-    background-color: aquamarine;
 }
 
 @media (max-width: 991px) {
     .qc {
         max-height: 100px;
         overflow: hidden;
-        background-color: aquamarine;
     }
 }
 
