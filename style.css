@@ -1,5 +1,13 @@
 .card {
-    margin-bottom: 20px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .qc {

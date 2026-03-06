@@ -85,48 +85,22 @@
 
             <div class="col-lg-8 col-12">
                 <div class="row">
-                    <!-- <div class="col">Cột 3</div> -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá tiền</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="dsGio"></tbody>
+                    </table>
+                    <h4>Tổng tiền: <span id="tongTien">0</span> VNĐ</h4><!-- <div class="col">Cột 3</div> -->
                 </div>
             </div>
 
             <div class="col-lg-2 col-12 qc text-center">
                 <p> qc 2 </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal1" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLabel1">Chi tiết sản phẩm</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Radio -->
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="choice" id="radio1">
-                        <label class="form-check-label" for="radio1">Option 1</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="choice" id="radio2">
-                        <label class="form-check-label" for="radio2">Option 2</label>
-                    </div>
-
-                    <!-- Checkbox -->
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="check1">
-                        <label class="form-check-label" for="check1">Choice 1</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="check2">
-                        <label class="form-check-label" for="check2">Choice 2</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
             </div>
         </div>
     </div>
@@ -139,6 +113,36 @@
             <p>Địa chỉ: Số 1 đường ABC, phường DEF, Thành phố GHI.</p>
         </div>
     </div>
+
+    <script>
+        function xemGio() {
+            let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+            let html = "";
+            let tong = 0;
+
+            gio.forEach(function (sp, stt) {
+                tong += sp.gia;
+                html += "<tr>" +
+                    "<td>" + sp.ten + "</td>" +
+                    "<td>" + sp.gia + " VNĐ</td>" +
+                    "<td><button onclick='xoaSP(" + stt + ")'>Xóa</button></td>" +
+                    "</tr>";
+            });
+
+            document.getElementById("dsGio").innerHTML = html;
+            document.getElementById("tongTien").innerHTML = tong;
+        }
+
+        function xoaSP(stt) {
+            let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
+            gio.splice(stt, 1);
+            localStorage.setItem("gioHang", JSON.stringify(gio));
+            xemGio();
+        }
+        xemGio();
+    </script>
+
+    <script src="main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

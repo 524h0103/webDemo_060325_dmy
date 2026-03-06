@@ -1,4 +1,13 @@
 document.getElementById('pay1').onclick = function () {
+    let mau = document.querySelector('input[name="mau1"]:checked');
+    let size = document.querySelector('input[name="size1"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -11,6 +20,15 @@ document.getElementById('pay1').onclick = function () {
     }
 }
 document.getElementById('save1').onclick = function () {
+    let mau = document.querySelector('input[name="mau1"]:checked');
+    let size = document.querySelector('input[name="size1"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -26,6 +44,15 @@ document.getElementById('save1').onclick = function () {
 
 
 document.getElementById('pay2').onclick = function () {
+    let mau = document.querySelector('input[name="mau2"]:checked');
+    let size = document.querySelector('input[name="size2"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -38,6 +65,15 @@ document.getElementById('pay2').onclick = function () {
     }
 }
 document.getElementById('save2').onclick = function () {
+    let mau = document.querySelector('input[name="mau2"]:checked');
+    let size = document.querySelector('input[name="size2"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -53,6 +89,15 @@ document.getElementById('save2').onclick = function () {
 
 
 document.getElementById('pay3').onclick = function () {
+    let mau = document.querySelector('input[name="mau3"]:checked');
+    let size = document.querySelector('input[name="size3"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -65,6 +110,15 @@ document.getElementById('pay3').onclick = function () {
     }
 }
 document.getElementById('save3').onclick = function () {
+    let mau = document.querySelector('input[name="mau3"]:checked');
+    let size = document.querySelector('input[name="size3"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -79,6 +133,15 @@ document.getElementById('save3').onclick = function () {
 }
 
 document.getElementById('pay4').onclick = function () {
+    let mau = document.querySelector('input[name="mau4"]:checked');
+    let size = document.querySelector('input[name="size4"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -91,6 +154,15 @@ document.getElementById('pay4').onclick = function () {
     }
 }
 document.getElementById('save4').onclick = function () {
+    let mau = document.querySelector('input[name="mau4"]:checked');
+    let size = document.querySelector('input[name="size4"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -105,6 +177,15 @@ document.getElementById('save4').onclick = function () {
 }
 
 document.getElementById('pay5').onclick = function () {
+    let mau = document.querySelector('input[name="mau5"]:checked');
+    let size = document.querySelector('input[name="size5"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -117,6 +198,15 @@ document.getElementById('pay5').onclick = function () {
     }
 }
 document.getElementById('save5').onclick = function () {
+    let mau = document.querySelector('input[name="mau5"]:checked');
+    let size = document.querySelector('input[name="size5"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -131,6 +221,15 @@ document.getElementById('save5').onclick = function () {
 }
 
 document.getElementById('pay6').onclick = function () {
+    let mau = document.querySelector('input[name="mau6"]:checked');
+    let size = document.querySelector('input[name="size6"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -143,6 +242,15 @@ document.getElementById('pay6').onclick = function () {
     }
 }
 document.getElementById('save6').onclick = function () {
+    let mau = document.querySelector('input[name="mau6"]:checked');
+    let size = document.querySelector('input[name="size6"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -157,6 +265,15 @@ document.getElementById('save6').onclick = function () {
 }
 
 document.getElementById('pay7').onclick = function () {
+    let mau = document.querySelector('input[name="mau7"]:checked');
+    let size = document.querySelector('input[name="size7"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -169,6 +286,15 @@ document.getElementById('pay7').onclick = function () {
     }
 }
 document.getElementById('save7').onclick = function () {
+    let mau = document.querySelector('input[name="mau7"]:checked');
+    let size = document.querySelector('input[name="size7"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -183,6 +309,15 @@ document.getElementById('save7').onclick = function () {
 }
 
 document.getElementById('pay8').onclick = function () {
+    let mau = document.querySelector('input[name="mau8"]:checked');
+    let size = document.querySelector('input[name="size8"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -195,6 +330,15 @@ document.getElementById('pay8').onclick = function () {
     }
 }
 document.getElementById('save8').onclick = function () {
+    let mau = document.querySelector('input[name="mau8"]:checked');
+    let size = document.querySelector('input[name="size8"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -209,6 +353,15 @@ document.getElementById('save8').onclick = function () {
 }
 
 document.getElementById('pay9').onclick = function () {
+    let mau = document.querySelector('input[name="mau9"]:checked');
+    let size = document.querySelector('input[name="size9"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -221,6 +374,15 @@ document.getElementById('pay9').onclick = function () {
     }
 }
 document.getElementById('save9').onclick = function () {
+    let mau = document.querySelector('input[name="mau9"]:checked');
+    let size = document.querySelector('input[name="size9"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
@@ -235,6 +397,15 @@ document.getElementById('save9').onclick = function () {
 }
 
 document.getElementById('pay10').onclick = function () {
+    let mau = document.querySelector('input[name="mau10"]:checked');
+    let size = document.querySelector('input[name="size10"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let kq = confirm("Bạn có chắc là muốn mua ngay lập tức không?");
     if (kq == true) {
         alert("Mua hàng thành công!");
@@ -247,6 +418,15 @@ document.getElementById('pay10').onclick = function () {
     }
 }
 document.getElementById('save10').onclick = function () {
+    let mau = document.querySelector('input[name="mau10"]:checked');
+    let size = document.querySelector('input[name="size10"]:checked');
+    if (!mau) {
+        return;
+    }
+    if (!size) {
+        return;
+    }
+
     let gio = JSON.parse(localStorage.getItem("gioHang")) || [];
 
     gio.push({
